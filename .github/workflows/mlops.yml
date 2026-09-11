@@ -29,5 +29,10 @@ jobs:
       - name: Simulate drift
         run: python scripts/simulate_drift.py
 
+      - name: Start API server
+        run: |
+          uvicorn scripts.api:app --host 0.0.0.0 --port 8000 &
+          sleep 5
+
       - name: Run monitoring
         run: python scripts/run_monitoring.py
