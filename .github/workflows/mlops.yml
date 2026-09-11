@@ -20,5 +20,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run monitoring pipeline
+      - name: Train model
+        run: python scripts/train_model.py
+
+      - name: Create datasets
+        run: python scripts/create_data.py
+
+      - name: Simulate drift
+        run: python scripts/simulate_drift.py
+
+      - name: Run monitoring
         run: python scripts/run_monitoring.py
