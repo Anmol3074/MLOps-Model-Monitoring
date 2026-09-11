@@ -1,0 +1,13 @@
+.menv/
+.venv/
+__pycache__/
+*.pyc
+
+mlruns/
+
+data/
+models/
+reports/
+
+*.csv
+*.joblib

@@ -1,0 +1,9 @@
+drift:
+  psi_warning: 0.10
+  psi_critical: 0.25
+
+  ks_pvalue: 0.05
+
+performance:
+  f1_drop_warning: 0.05
+  f1_drop_critical: 0.10
