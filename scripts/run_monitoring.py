@@ -4,6 +4,7 @@ import subprocess
 steps = [
     "python scripts/workflow.py",
     "python scripts/monitoring_report.py",
+    "python scripts/monitor_api.py",
     "python scripts/prediction_monitor.py",
     "python scripts/alert_summary.py"
 ]
