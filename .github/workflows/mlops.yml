@@ -2,7 +2,7 @@ name: MLOps Monitoring
 
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 jobs:
   monitoring:
